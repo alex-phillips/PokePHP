@@ -51,6 +51,11 @@ class Description extends Object
      */
     public $pokemon;
 
+    /**
+     * Returns an array of Game objects associated with the description
+     *
+     * @return array
+     */
     public function getGames()
     {
         $xary = array();

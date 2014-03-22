@@ -52,7 +52,9 @@ class Pokedex extends Object
     }
 
     /**
-     * @return array - array of Pokemon objects associated with the Pokedex
+     * Returns an array of Pokemon objects related to the Pokedex
+     *
+     * @return array
      */
     public function getPokemon()
     {

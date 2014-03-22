@@ -76,6 +76,11 @@ class Type extends Object
         return $this->id;
     }
 
+    /**
+     * Return an array of Type objects that this type is ineffective to.
+     *
+     * @return array
+     */
     public function getIneffective()
     {
         $xary = array();
@@ -95,6 +100,11 @@ class Type extends Object
         return $this->name;
     }
 
+    /**
+     * Return an array of Type objects that this type has no effect on.
+     *
+     * @return array
+     */
     public function getNoEffect()
     {
         $xary = array();
@@ -104,6 +114,11 @@ class Type extends Object
         return $xary;
     }
 
+    /**
+     * Return an array of Type objects that this type is resistive to.
+     *
+     * @return array
+     */
     public function getResistance()
     {
         $xary = array();
@@ -118,6 +133,11 @@ class Type extends Object
         return $this->resource_uri;
     }
 
+    /**
+     * Return an array of Type objects that this type is super effective to.
+     *
+     * @return array
+     */
     public function getSuperEffective()
     {
         $xary = array();
@@ -127,6 +147,11 @@ class Type extends Object
         return $xary;
     }
 
+    /**
+     * Return an array of Type objects that this type is weak to.
+     *
+     * @return array
+     */
     public function getWeakness()
     {
         $xary = array();

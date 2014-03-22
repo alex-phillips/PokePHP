@@ -46,6 +46,11 @@ class Egg extends Object
      */
     public $pokemon = array();
 
+    /**
+     * Returns an array of Pokemon objects related to the egg group
+     *
+     * @return array
+     */
     public function getPokemon()
     {
         $xary = array();

@@ -51,6 +51,12 @@ class Sprite extends Object
      */
     public $image;
 
+    /**
+     * Returns the Pokemon object of the Pokemon associated with
+     * this sprite.
+     *
+     * @return Pokemon
+     */
     public function getPokemon()
     {
         return new Pokemon($this->pokemon->resource_id);

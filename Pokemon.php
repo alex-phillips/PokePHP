@@ -156,6 +156,12 @@ class Pokemon extends Object
      */
     public $male_female_ratio;
 
+    /**
+     * Override the parent constructor to handle passing a string instead of the
+     * Pokemon ID.
+     *
+     * @param int $id
+     */
     public function __construct($id)
     {
         if (!is_numeric($id)) {
@@ -165,6 +171,11 @@ class Pokemon extends Object
         parent::__construct($id);
     }
 
+    /**
+     * Return an array of Ability objects related to the Pokemon
+     *
+     * @return array
+     */
     public function getAbilities()
     {
         $xary = array();
@@ -175,6 +186,11 @@ class Pokemon extends Object
         return $xary;
     }
 
+    /**
+     * Return an array of Description objects related to the Pokemon
+     *
+     * @return array
+     */
     public function getDescriptions()
     {
         $xary = array();
@@ -185,6 +201,11 @@ class Pokemon extends Object
         return $xary;
     }
 
+    /**
+     * Return an array of egg group objects related to the Pokemon
+     *
+     * @return array
+     */
     public function getEggGroups()
     {
         $xary = array();
@@ -195,6 +216,12 @@ class Pokemon extends Object
         return $xary;
     }
 
+    /**
+     * If the Pokemon evolves by leveling up, this returns an array
+     * of potential levels the Pokemon will evolve.
+     *
+     * @return array
+     */
     public function getEvolvesAt()
     {
         $xary = array();
@@ -206,6 +233,12 @@ class Pokemon extends Object
         return $xary;
     }
 
+    /**
+     * Returns an array of Pokemon objects of potential evolutions for
+     * the Pokemon.
+     *
+     * @return array
+     */
     public function getEvolutions()
     {
         $xary = array();
@@ -215,6 +248,11 @@ class Pokemon extends Object
         return $xary;
     }
 
+    /**
+     * Returns an array of Move objects that the Pokemon can learn.
+     *
+     * @return array
+     */
     public function getMoves()
     {
         $xary = array();
@@ -226,6 +264,11 @@ class Pokemon extends Object
         return $xary;
     }
 
+    /**
+     * Return an array of Type objects of types the Pokemon is.
+     *
+     * @return array
+     */
     public function getTypes()
     {
         $xary = array();
