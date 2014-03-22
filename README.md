@@ -1,12 +1,12 @@
 # PokePHP
 
-This is a PHP wrapper for the Pokemon API at PokeAPI.co. You can use this wrapper
+This is a PHP wrapper for the Pokemon API at http://PokeAPI.co/. You can use this wrapper
 to retrieve information regarding abilities, descriptions, egg groups, games, moves,
 pokemon, types, and retrieve sprite images for each Pokemon.
 
 ## API Usage
 
-Paul Hallett has been AWESOME enough to build such an extensive and usefule REST
+Paul Hallett (http://phalt.co/) has been AWESOME enough to build such an extensive and useful REST
 API that is free to use. However, for good reason, there is the limitation of 300
 requests PER RESOURCE PER DAY. This means you can request the 'mew' Pokemon object
 300 times per day before you are cut off. However, each object contains a 'modified'
