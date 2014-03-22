@@ -49,11 +49,11 @@ is constructed when calling the getter function.
 
 Ex:
 ```php
+$mew = new \PokemonAPI\Pokemon('mew');
+
 // Returns array of stdClasses containing name, resource_uri, and resource_id
-$mew = new Pokemon('mew');
 $types = $mew->types;
 
 // This returns an array of Type objects
-$mew = new Pokemon('mew');
 $types = $mew->getTypes();
 ```
