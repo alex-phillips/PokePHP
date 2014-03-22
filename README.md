@@ -22,7 +22,7 @@ your project and from there you can start calling constructors for any type
 in the following manner.
 
 Ex:
-```
+```php
 $mew = new \PokemonAPI\Pokemon(151);
 ```
 
@@ -33,7 +33,7 @@ object and passing the ID into the constructor. In the case of a new Pokemon obj
 you can also pass in a string of the Pokemon's name.
 
 Ex:
-```
+```php
 $swords_dance = new \PokemonAPI\Move(14);
 
 $squirtle = new \PokemonAPI\Pokemon('squirtle');
@@ -48,7 +48,7 @@ each variable directly since any variable that is related to another Pokemon API
 is constructed when calling the getter function.
 
 Ex:
-```
+```php
 // Returns array of stdClasses containing name, resource_uri, and resource_id
 $mew = new Pokemon('mew');
 $types = $mew->types;
