@@ -23,7 +23,7 @@ foreach (
         'Game',
         'Sprite',
     ) as $file) {
-    require_once(__DIR__ . "/PokemonAPI.php");
+    require_once(__DIR__ . "/$file.php");
 }
 
 /**
