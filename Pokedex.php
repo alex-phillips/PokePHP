@@ -41,12 +41,19 @@ class Pokedex extends Object
      */
     public $pokemon;
 
+    /**
+     * Overriding the parent constructor since Pokedex should always be called
+     * with passing '1' as the parameter.
+     */
     public function __construct()
     {
         $data = json_decode(file_get_contents(PokemonAPI::$api_url . "pokedex/1/"));
         $this->initialize($data);
     }
 
+    /**
+     * @return array - array of Pokemon objects associated with the Pokedex
+     */
     public function getPokemon()
     {
         $xary = array();
