@@ -1,0 +1,15 @@
+{
+  "name": "alex-phillips/PokePHP",
+  "description": "This is a PHP wrapper for the Pokemon API at http://PokeAPI.co/",
+  "licence": "MIT",
+  "authors": [
+    {
+      "name" : "Alex Phillips"
+    }
+  ],
+  "autoload" : {
+    "psr-4" : {
+      "PokemonAPI" : "src"
+    }
+  }
+}
