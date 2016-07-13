@@ -10,22 +10,6 @@
 
 namespace PokemonAPI;
 
-foreach (
-    array(
-        'Object',
-        'Pokemon',
-        'Ability',
-        'Description',
-        'Egg',
-        'Move',
-        'Type',
-        'Pokedex',
-        'Game',
-        'Sprite',
-    ) as $file) {
-    require_once(__DIR__ . "/$file.php");
-}
-
 /**
  * Class PokemonAPI - this is really only meant to provide a global URL
  *                      as well as provide a single file to include to
